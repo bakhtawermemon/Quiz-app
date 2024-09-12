@@ -1,0 +1,131 @@
+body {
+    background-image: url(./download.jpg);
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.quiz-container {
+    background-image: url(./download.jpg);
+    background-size: cover;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0px 0px 3px 3px rgb(32, 112, 105);
+    max-width: 600px;
+    width: 100%;
+}
+
+.quiz-header h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.quiz-header p {
+    margin: 10px 0 20px;
+    font-size: 18px;
+    color: #000000;
+}
+
+.quiz-options {
+    display: flex;
+    flex-direction: column;
+}
+
+.option {
+    background: #f5f5f5;
+    box-shadow: 0px 0px 5px 0px red;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.option:hover {
+    background: rgb(240, 142, 158);
+}
+
+.option input[type="radio"] {
+    margin-right: 15px;
+    transform: scale(1.5);
+}
+
+button {
+    box-shadow: 0px 0px 5px 5px rgb(255, 70, 101);
+    background: rgb(255, 73, 73);
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: pink;
+}
+
+/* Media Queries for responsiveness */
+
+/* For smaller screens (tablets) */
+@media (max-width: 768px) {
+    .quiz-container {
+        padding: 20px;
+        max-width: 500px;
+    }
+
+    .quiz-header h2 {
+        font-size: 22px;
+    }
+
+    .quiz-header p {
+        font-size: 16px;
+    }
+
+    .option {
+        padding: 12px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+/* For small mobile devices */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .quiz-container {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .quiz-header h2 {
+        font-size: 20px;
+    }
+
+    .quiz-header p {
+        font-size: 14px;
+    }
+
+    .option {
+        padding: 10px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
